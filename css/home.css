@@ -1,0 +1,473 @@
+/* navbar */
+
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  font-size: 1em;
+}
+
+header .navbar {
+  background-color: #3d3b40;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 15px;
+  height: 80px;
+  overflow: hidden;
+}
+
+header .navbar .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar .nav-right .shop-logo a {
+  color: #ffff;
+  font-size: 1.5em;
+}
+
+header .navbar .nav-right .search-bar {
+  border: 1px solid #ffff;
+  border-radius: 20px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  width: 30em;
+  height: 2.5em;
+}
+
+header .navbar .nav-right .search-bar a {
+  color: #ffff;
+  font-size: 1.3em;
+  display: flex;
+}
+
+header .navbar .nav-right .search-bar input {
+  background-color: transparent;
+  width: 400px;
+  border: none;
+  outline: none;
+}
+
+header .navbar .nav-right .search-bar input::placeholder {
+  color: #ffff;
+  font-size: 1.3em;
+}
+
+header .navbar .nav-right a {
+  padding: 5px 10px;
+  margin: 0px 5px;
+  font-size: 1.1em;
+}
+
+header .navbar .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navbar .nav-left .register-login-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 3px;
+  transition: 0.2s;
+}
+
+header .navbar .nav-left .register-login-btn i {
+  margin: 7px;
+  color: #ffff;
+  font-size: 1.2em;
+}
+
+header .navbar .nav-left .register-login-btn a {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 0;
+  opacity: 0;
+  max-height: 1em;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+header .navbar .nav-left .register-login-btn:hover {
+  border: 1px solid #ffff;
+  border-radius: 20px;
+}
+
+header .navbar .nav-left .register-login-btn:hover a {
+  max-width: 200px;
+  margin-left: 8px;
+  opacity: 1;
+}
+
+header .navbar .nav-left .cart-shopping i {
+  color: #ffff;
+  margin: 10px;
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+/* slider */
+
+.slider {
+  position: relative;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.slider .slides .item {
+  position: relative;
+  display: none;
+}
+
+.slider .slides .item img {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.slider .slides .item span {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.slider .slides .active {
+  display: block;
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.slider .button {
+  position: absolute;
+  bottom: 25px;
+  left: 110px;
+  z-index: 1;
+}
+
+.slider .button i {
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.slider .button i:hover {
+  color: darkgray;
+}
+
+/* product section */
+
+.product-section {
+  padding: 20px 40px;
+  font-size: 1em;
+}
+
+.product-section .shopping-card {
+  background-color: #ffff;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  margin: 15px 5px;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product-section .shopping-card:hover {
+  top: -20px;
+  transition: 2s;
+}
+
+.shopping-card .img-sec {
+  position: relative;
+}
+
+.shopping-card .img-sec img {
+  width: 60%;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.shopping-card .img-sec .hot-offer {
+  color: red;
+  padding: 3px 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.shopping-card .img-sec .stars {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #f1c40f;
+}
+
+.shopping-card .title {
+  color: #444;
+  margin: 15px;
+}
+
+.shopping-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.shopping-card .buttons .right .price {
+  color: #666;
+  font-weight: 600;
+}
+
+.shopping-card .buttons .left {
+  display: flex;
+}
+
+.shopping-card .buttons .extend-btn {
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #444;
+  color: white;
+  width: 40px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.shopping-card .buttons .left .extend-btn:hover {
+  width: 110px;
+  color: red;
+}
+
+.shopping-card .buttons .left .extend-btn:hover .b-text {
+  display: block;
+}
+
+.shopping-card .buttons .left .extend-btn .b-text {
+  display: none;
+  color: black;
+}
+
+.shopping-card .buttons .left .extend-btn .b-icon {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-card .buttons .left .extend-btn .s-icon {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #3d3b40;
+  font-size: 1em;
+  position: relative;
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .right {
+  padding: 40px;
+}
+
+footer .right .title {
+  padding: 10px 0px;
+  color: white;
+  font-size: 1.2em;
+}
+
+footer .right .des {
+  margin-top: 15px;
+  color: white;
+  line-height: 1.9em;
+  font-size: 0.9em;
+}
+
+footer .right .phone,
+footer .right .email {
+  color: #ffff;
+  margin-top: 10px;
+}
+
+footer .middle {
+  margin-left: 400px;
+}
+
+footer .middle div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .middle .home,
+footer .middle .product {
+  margin: 20px;
+}
+
+footer .middle .home a,
+footer .middle .product a,
+footer .middle .login a {
+  color: #ffff;
+  padding: 5px;
+  font-size: 1em;
+  border-bottom: 1px solid #ffff;
+}
+
+footer ul {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 100px;
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: none;
+  color: #ffff;
+  margin: 0 25px;
+  transition: 0.5s;
+}
+
+footer ul li a i {
+  font-size: 0.8em;
+}
+
+footer ul li a span {
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+footer ul li a span:nth-child(1),
+footer ul li a span:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  background: #ffff;
+}
+footer ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+footer ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+footer ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+footer ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+footer ul li a span:nth-child(2),
+footer ul li a span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  background: #404040;
+}
+footer ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+footer ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+footer ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+footer ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.github:hover {
+  color: black;
+}
+.github:hover span {
+  background: black;
+}
+.email:hover {
+  color: #d74713;
+}
+.email:hover span {
+  background: #d74713;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.instagram:hover span {
+  background: #c32aa3;
+}
+.telegram:hover {
+  color: #1269cc;
+}
+.telegram:hover span {
+  background: #1269cc;
+}
+footer ul li a .twitter {
+  color: #1da1f2;
+}
+footer ul li a:hover:nth-child(3) {
+  color: #c32aa3;
+}
+footer ul li a:hover:nth-child(4) {
+  color: #dd4b39;
+}
+
+footer .bottom {
+  text-align: center;
+  background-color: #2d3436;
+}

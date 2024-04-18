@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/animation.css ">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/574965c69b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+                <div class="nav-right">
+                    <div class="shop-logo">
+                        <a href="">Digital Shop</a>
+                    </div>
+                    <div class="search-bar">
+                        <a href=""><i class="fa-solid fa-magnifying-glass fa-bold"></i></i></a>
+                        <input type="text" placeholder="جستجو" > 
+                    </div>
+                </div>
+                <div class="nav-left">
+                    <div class="register-login-btn">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="">ثبت نام/ورود</a>
+                    </div>
+                    <div class="cart-shopping">
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+        </nav>
+        <section class="slider">
+            <div class="slides">
+                <div class="item active" id="slide1">
+                    <img src="/images/mac.png" alt="">
+                </div>
+                <div class="item" id="slide2">
+                    <img src="/images/iphone.png" alt="">
+                </div>
+                <div class="item" id="slide3">
+                    <img src="/images/watch.webp" alt="">
+                </div>
+            </div>
+            <div class="button">
+                <i onclick="setSlide('slide1', 1)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide2', 2)" class="fa-solid fa-circle"></i>
+                <i onclick="setSlide('slide3', 3)" class="fa-solid fa-circle"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="product-section">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/13promax.jpeg" alt="">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                             آیفون ۱۳ پرو مکس
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۷۰,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/air2.jpg" alt="">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            
+                            ایرپاد
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۶,۲۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/AllInOne.jpeg" alt="">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            آل این وان 
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۱۲۰,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/keyboard.jpeg" alt="">
+                            <span class="hot-offer">پیشنهاد ویژه</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>    
+                            </div>
+                        </div>
+                        <div class="title">
+                            کیبورد
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۲‌,۵۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/mac.jpeg" alt="">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            لب تاپ 
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۴۵,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                    <div class="shopping-card">
+                        <div class="img-sec">
+                            <img src="/images/mouse.jpeg" alt="">
+                            <span class="hot-offer">پیشنهاد ویژه</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            موس گیمینگ
+                        </div>
+                        <div class="buttons">
+                            <div class="right">
+                                <span class="price">۸۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">علاقه‌مندی</a>
+                                    <a class="b-icon" href=""><i class="fas fa-heart"></i></a>
+                                </div>
+                                <div class="extend-btn">
+                                    <a class="b-text" href="">خرید</a>
+                                    <a class="s-icon" href=""><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <dev class="row">
+            <div class="col-lg-8">
+                <div class="right">
+                    <div class="title">
+                        درباره ما
+                    </div>
+                    <div class="des">
+                        <strong>ابوالفضل بهاروندی</strong>
+                    </div>
+                    <div class="phone">
+                       شماره تماس : 0921000000
+                    </div>
+                    <div class="email">
+                        ایمیل : baharvandiaboalfazl@gmail.com 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="middle">
+                    <div class="home">
+                        <a href="">خانه</a>
+                    </div>
+                    <div class="product">
+                        <a href="">محصولات</a>
+                    </div>
+                    <div class="login">
+                        <a href="">ورود/ثبت نام</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="left">
+                    <div class="socials">
+                        <ul>
+                            <li>
+                              <a class="github" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="email" href="mailto:baharvandiaboalfazl@gmail.com">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="instagram" href="https://instagram.com/spattiall">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="telegram" href="https://telegram.me/spattiall">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </dev>
+        <dev class="bottom">
+            کلیه حقوق محفوظ می باشد 2023 ©
+        </dev> 
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+</body>
+
+</html>
