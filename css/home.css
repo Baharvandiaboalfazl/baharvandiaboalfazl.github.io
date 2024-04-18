@@ -50,6 +50,10 @@ header .navbar .nav-right .search-bar input {
   outline: none;
 }
 
+header .navbar .nav-right .search-bar input:focus {
+  color: #ffff;
+}
+
 header .navbar .nav-right .search-bar input::placeholder {
   color: #ffff;
   font-size: 1.3em;
