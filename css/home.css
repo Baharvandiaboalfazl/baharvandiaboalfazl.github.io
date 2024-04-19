@@ -154,8 +154,8 @@ header .navbar .nav-left .cart-shopping i {
 
 .slider .button {
   position: absolute;
-  bottom: 25px;
-  left: 110px;
+  bottom: 10%;
+  left: 10%;
   z-index: 1;
 }
 
@@ -322,6 +322,7 @@ footer .right .email {
 
 footer .middle {
   margin-left: 400px;
+  width: 30%;
 }
 
 footer .middle div {
